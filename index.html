@@ -200,7 +200,7 @@ gameOver();
   {
       if(score > 1)
       {
-var wrong = new Audio('wrong.mp3'); wrong.play();
+
 if(userGuess < secretNumber) {
  displayMessage("it's low");
 var low = new Audio('low.mp3');
@@ -215,7 +215,7 @@ high.play();
       }
       else 
       {
-var lost = new Audio('https://www.myinstants.com/media/sounds/pue-pue-pue_ltDwNu9.mp3');
+var lost = new Audio('lost.mp3');
 lost.play();       displayMessage('You lost the game!');
        document.querySelector('.score').textContent=0;
    gameOver();
